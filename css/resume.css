@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Satisfy&display=swap');
+
+body
+{
+    padding-top: 35px;
+    background: #AA96DA;
+    background: linear-gradient(180deg, rgba(170,150,218,1) 0%, rgba(252,186,211,1) 70%, rgba(255,255,210,1) 100%);
+    text-align: center;
+}
+
+h1
+{
+    font-size: 75px;
+    color: #212121;
+    font-family: 'Satisfy', cursive;
+    margin-bottom: 10px;
+}
+
+h2, .h3
+{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 35px;
+    color: #212121;
+    font-family: 'Satisfy', cursive;
+    padding-top: 10%;
+}
+
+h3
+{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 35px;
+    color: #212121;
+    font-family: 'Satisfy', cursive;
+    padding-top: -1px;
+}
+
+.img
+{
+    border-radius: 10%;
+    width: 100%;
+}
+
+p, .p1
+{
+    color: black;
+    padding: 10px;
+    border-color: white;
+    border-radius: 15px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: lighter;
+    background: rgba(169, 104, 230, 0.4);
+    text-align: left;
+    
+    z-index: 2;
+}
+
+.p1
+{
+    text-align: right;
+}
+
+nav
+{   
+    background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(255,255,255,0) 100%);
+    float: left;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.button
+{
+    font-family: 'Archivo Black', sans-serif;
+    background: transparent;
+    border-color: transparent;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3px;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    color: lightpink;
+}
+
+.button:active
+{
+    color: pink;
+}
+
+hr
+{    
+    background-color: rgb(255, 255, 255, .5);
+    border-width: 0;
+    height: 5px;
+}
+
+img
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.content
+{
+    max-width: 1000px;
+    margin: 0px auto;
+    word-wrap: break-word;
+}
+
+.left, .right
+{
+    float:left; width:50%
+}
+
+.open-button 
+{
+    border-radius: 13px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    background: #AA96DA 0%;
+    border-width: 5px;
+    border-color: white;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3px;
+    cursor: pointer;
+
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+
+    z-index: 3;
+}
+
+.close-button
+{
+    display: none;
+
+    border-radius: 13px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    background: #AA96DA 0%;
+    border-width: 5px;
+    border-color: white;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 3px;
+    cursor: pointer;
+
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+
+    z-index: 3;
+}
+
+.form-popup 
+{
+    display: none;
+    z-index: 3;
+}
+
+.dim /*Scrapped :(*/
+{
+
+    position: fixed;
+
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgb(0, 0, 0, .8);
+}

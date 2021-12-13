@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <Title>Anson Hammell Portfolio</Title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/contact.css">
+
+    </head>
+
+    <body>
+        <!--Wrapper-->
+        <div class="content">
+            <!--Header-->
+            <header id="header">
+                <h1>Contact Me</h1>
+            </header>
+            <a href="../main.html"><button class="button">Home</button></a>
+            <a href="resume.html"><button class="button">Resume</button></a>
+        </div>
+
+        <hr>
+
+        <form method="post" action="https://formspree.io/f/xknynzld">
+            <div class="content">
+                <div class="left">
+                    <label for="name">NAME </label><br>
+                    <input type="text" name="name" id="name" required/><br>
+
+                    <label for="email">E-MAIL </label><br>
+                    <input type="email" name="_replyto" id="email" required/><br>
+
+                    <label for="address">ADDRESS </label><br>
+                    <input type="text" name="address" id="address" required/><br>
+
+                    <label for="postal">POSTAL CODE </label><br>
+                    <input type="text" name="postal" id="postal" required/><br>
+
+
+                </div>
+                
+
+                <div class="right">
+                    <div class="field">
+                        <input type = "radio" name ="reason" id = "Question" onclick="closeHiring()" checked>
+                        <label type = "radio" for = "Question"> QUESTION</label>
+
+                        <input type = "radio" name ="reason" id = "Comment" onclick="closeHiring()">
+                        <label type = "radio" for = "Comment"> COMMENT</label>
+
+                        <input type = "radio" name ="reason" id = "Hiring" onclick="openHiring()">
+                        <label type = "radio" for = "Hiring"> HIRING</label>
+
+                        <div class="hourly" id="hiringClicked" style="display:none;"> 
+                            HOURLY RATE: 
+                            <input type="number" id="hiringRate" name="hiringRate" required>
+                            
+                        </div>
+                            <label for="message">MESSAGE </label><br>
+                            <textarea class="textarea" type="textarea" name="message" id="message" rows="7" cols="50" required></textarea>
+                            
+                    </div>
+                </div>
+                <ul class="action">
+                    <br>
+                    <button type="submit" class="primary button">Send</button>
+                    
+
+                
+
+            </div>
+
+        </form>
+
+        </div>
+        <script>
+            function openHiring()
+            {
+                if(document.getElementById("Hiring").checked)
+                {
+                    document.getElementById("hiringClicked").style.display= "block";
+                }
+                else
+                {
+                    document.getElementById("hiringClicked").style.display= "none";
+                }
+            }
+            function closeHiring()
+            {
+                document.getElementById("hiringClicked").style.display= "none";
+            }
+        </script>
+
+    </body>
+        
+</html>

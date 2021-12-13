@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Satisfy&display=swap');
+
+
+body
+{
+    background: #AA96DA;
+    background: linear-gradient(190deg, rgba(170,150,218,1) 0%, rgba(252,186,211,1) 70%, rgba(255,255,210,1) 100%);
+    text-align: center;
+}
+
+h1
+{
+    font-size: 75px;
+    color: #212121;
+    font-family: 'Satisfy', cursive;
+    margin-bottom: 10px;
+}
+
+h2
+{
+    margin-bottom: 20%;
+    margin-top: 0px;
+    font-size: 55px;
+    color: #212121;
+    font-family: 'Satisfy', cursive;
+}
+
+img
+{   
+    border: 10px solid rgb(245, 245, 245, .5);
+    border-radius: 50%;
+}
+
+.button
+{
+    border-radius: 13px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    background: #f28dff 0%;
+    border-width: 5px;
+    border-color: white;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3px;
+    cursor: pointer;
+
+}
+
+.button:hover
+{
+    background: #f39cff;
+    color: white;
+}
+
+.button:active
+{
+    color: lightgrey;
+    background: #d16bdf;
+}
+
+hr
+{
+    margin: 5%;
+    
+    background-color: white;
+    border-width: 0;
+    height: 5px;
+
+}
+
+.content
+{
+    max-width: 500px;
+    margin: auto;
+}

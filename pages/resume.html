@@ -1,0 +1,115 @@
+<!--
+    Centered viewport, equal margins left and right, cover 90% of the viewport width
+    Should be stylized,
+
+-->
+
+<html>
+    <head>
+        <Title>Anson Hammell Portfolio</Title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/resume.css">
+
+    </head>
+
+
+    <body>
+        <!--Navigation-->
+        <nav>
+            <a href="../main.html"><button class="button">Home</button></a>
+            <a href="contact.html"><button class="button">Contact Me</button></a>
+        </nav>
+
+
+        <!--Wrapper-->
+        <div class="content">
+            <!--Header-->
+            <header id="header">
+                <h1>Resume</h1>
+            </header>
+
+            <img class="img" src="../assets/img/background.jpg">
+
+            <!--Popup-->
+            <div class="form-popup" id="resume">
+                <div class="left">
+                    <h2>
+                        About Me
+                    </h2>
+                    <hr>
+                    <p>
+                        Hello, my name is Anson Hammell. I am currently a student attending Seneca college in the CPA program.
+                        My passion gaming in many apsects, from playing games, to designing and coding. Although I'm still 
+                        very much an amateur, I hope to improve during my time at Seneca, aswell as learn other skills!
+                        <br> <br>
+                        My goal is to one day create my own successful indepent game that revenues enough profit to self sustain my passion,
+                        and maybe pick up a few others a long the way.
+                        <br>
+                    </p>                
+                </div>
+            
+                <div class="right">
+                    <h2>
+                        Basic information
+                    </h2>
+                    <hr>
+                    <p>
+                        <b>AGE:</b> <p1>25</p1><br>
+                        <b>EMAIL:</b> <p1>athammell@myseneca.ca</p1><br>
+                        <b>LANGUAGE:</b> <p1>English<p1><br>
+                    </p>
+                </div>
+                <div class="right">
+                    <h3>
+                        Education
+                    </h3>
+                    <hr>
+                    <p>
+                        2021-2023
+                        <br>
+                        Bachelor's Degree
+                        <br>
+                        Seneca college
+
+                    </p>
+                </div>
+
+                <h2>
+                    Reflection
+                </h2>
+                <hr>
+                <p>
+                    My experiences with WEB222 course have been phenomenal! Although I have not been the best student, I have been enjoying most of my assignments throughout the semester and have gained a liking to web design. I started off with no knowledge of html, css, or javascript, but came to like it so. I’ve learned many things such as how to create forms, responsive pages as well as the beginnings of java script coding.
+                    <br><br>
+                    For javascript, although I have much to learn, I did manage to learn some simple things such as doing mathematics, arrays, user defined objects, how scopes work, and regular expressions. As for the html side, I learned how to create and organize pages with things such as tables as well as interactive components like buttons, audio, and videos. With these concepts I’ve learned, I feel as though I can not only use them in other classes, but also in future careers. Either it be independently or with a company, web design is still a very much sought out skill. 
+                    <br><br>
+                    As for my own goals, knowing stuff such as html can come in handy with making my own website, or even html integration in programs I create. Either it be something such as software or video game development. I still have many things to work on and improve, as well as to learn. One thing I find and interest in right now is how to make websites more interactive in design and just more visually pleasing overall. 
+                </p>
+            </div>
+
+            <button id="openButton" class="open-button" onClick="openResume()">Check out my Resume</button>
+            <button id="closeButton" class="close-button" onClick="closeResume()">Close my Resume</button>
+
+        </div>
+        <script>
+            function openResume()
+            {
+                document.getElementById("resume").style.display = "block";
+                //document.getElementById("dim").style.display = "block";
+                document.getElementById("closeButton").style.display= "block";
+                document.getElementById("openButton").style.display= "none";
+                window.scrollTo(0,document.body.scrollHeight);
+            }
+
+            function closeResume()
+            {
+                document.getElementById("resume").style.display = "none";
+                document.getElementById("closeButton").style.display= "none";
+                document.getElementById("openButton").style.display= "block";
+
+            }
+        </script>
+
+    </body>
+</html>

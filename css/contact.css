@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Satisfy&display=swap');
+
+
+body
+{
+    background: #AA96DA;
+    background: linear-gradient(190deg, rgba(170,150,218,1) 0%, rgba(252,186,211,1) 70%, rgba(255,255,210,1) 100%);
+    text-align: center;
+}
+
+h1
+{
+    font-size: 75px;
+    color: #212121;
+    font-family: 'Satisfy', cursive;
+    margin-bottom: 10px;
+}
+
+h2
+{
+    margin-bottom: 20%;
+    margin-top: 0px;
+    font-size: 55px;
+    color: #212121;
+    font-family: 'Satisfy', cursive;
+}
+
+.button
+{
+    border-radius: 13px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    background: rgba(169, 104, 230, 0.4);
+    border-width: 5px;
+    border-color: white;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3px;
+    cursor: pointer;
+
+}
+
+.button:hover
+{
+    background: #d79cff;
+    color: white;
+}
+
+.button:active
+{
+    color: lightgrey;
+    background: #d16bdf;
+}
+
+hr
+{
+    margin: 5%;
+    
+    background-color: rgb(255, 255, 255, .3);
+    border-width: 0;
+    border-radius: 10px;
+    height: 5px;
+
+}
+
+label
+{
+    padding-top: 5%;
+    color: #ffffff;
+    display: block;
+    
+    font-size: 25px;
+    color: #212121;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+label[type="radio"]
+{
+    padding: 0px;
+    
+    font-size: 20px;
+    text-align: left;
+}
+
+input[type="text"],input[type="number"],input[type="email"]
+{
+    border: none;
+    background: transparent;
+    padding: 10px;
+
+    border-bottom: 2px solid black;
+    width: 75%;
+}
+
+input[type="text"]:hover,input[type="number"],input[type="email"]:hover
+{
+    background: rgb(128, 0, 128, .2);
+    border-radius: 3px;
+    width: 75%;
+}
+
+
+.textarea
+{
+
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: transparent;
+    word-wrap: break-word;
+
+}
+
+.textarea:hover
+{
+    background: rgb(128, 0, 128, .2);
+    border-radius: 3px;
+}
+
+
+.hourly
+{
+    font-size: 20px;
+    color: #212121;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+input[type="radio"]
+{
+    vertical-align: baseline;
+    float: left;
+    transform:translateY(35%);
+    background: transparent;
+}
+
+.field
+{
+    overflow: hidden;
+}
+
+.content
+{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.left, .right
+{
+    float:left; width:50%
+}
