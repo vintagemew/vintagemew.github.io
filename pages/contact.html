@@ -42,7 +42,7 @@
                     <input type="text" name="address" id="address" required/><br>
 
                     <label for="postal">POSTAL CODE </label><br>
-                    <input type="text" name="postal" id="postal" required/><br>
+                    <input type="text" name="postal" id="postal" placeholder="A1A 1A1" pattern="[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d" required/><br>
 
 
                 </div>
@@ -61,7 +61,7 @@
 
                         <div class="hourly" id="hiringClicked" style="display:none;"> 
                             HOURLY RATE: 
-                            <input type="number" id="hiringRate" name="hiringRate" required>
+                            <input type="number" id="hiringRate" name="hiringRate" placeholder="19.50" step=".01" required>
                             
                         </div>
                             <label for="message">MESSAGE </label><br>
@@ -71,7 +71,7 @@
                 </div>
                 <ul class="action">
                     <br>
-                    <button type="submit" class="primary button" onclick="history.go(0)">Send</button>
+                    <button type="submit" class="primary button">Send</button>
                     
 
                 
